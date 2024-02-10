@@ -55,6 +55,16 @@ footer {
 footer .text {
   color: #f4f4fd;
 }
+/* ==============event==================*/
+.nav a:hover,
+.nav a:focus {
+  color: red;
+}
+address a:hover,
+address a:focus {
+  color: red;
+}
+/* ============/event=================== */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
