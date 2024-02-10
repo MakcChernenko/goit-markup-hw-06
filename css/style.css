@@ -113,15 +113,17 @@ address a:focus {
   background-color: #f4f4fd;
 }
 .team-section .title {
+  text-align: center;
   letter-spacing: 0.02em;
 }
-.team-section .title {
-  text-align: center;
+.team-section-li {
+  background-color: #ffffff;
 }
 .team-section .text {
   text-align: center;
   color: #434455;
 }
+/* =============/3 section================ */
 .Portfolio .text {
   /* in the body */
 }
