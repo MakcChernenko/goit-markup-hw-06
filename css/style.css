@@ -100,10 +100,20 @@ address a:focus {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+/* =============/1 section================ */
+/* =============2 section================ */
 .benefits .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+}
+/* =============/2 section================ */
+/* =============3 section================ */
+.team-section {
+  background-color: #f4f4fd;
+}
+.team-section .title {
+  letter-spacing: 0.02em;
 }
 .team-section .title {
   text-align: center;
