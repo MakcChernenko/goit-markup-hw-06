@@ -5,21 +5,23 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  background: #fff;
 }
 button {
   cursor: pointer;
+  background: #4d5ae5;
 }
 h1 {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   text-align: center;
   color: #fff;
 }
 h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
@@ -41,18 +43,45 @@ a {
 ul li {
   list-style: none;
 }
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
 header .logo span {
   color: #2e2f42;
 }
 footer .logo span {
   color: #f4f4fd;
+}
+footer {
+  background: #2e2f42;
+}
+footer .text {
+  color: #f4f4fd;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.hero {
+  background: #2e2f42;
+}
+.benefits .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.team-section .title {
+  text-align: center;
+}
+.team-section .text {
+  text-align: center;
+  color: #434455;
+}
+.Portfolio .text {
+  /* in the body */
+}
+.Portfolio .title {
+  /* in the h3  */
 }
