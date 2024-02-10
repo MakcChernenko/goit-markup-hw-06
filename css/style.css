@@ -64,6 +64,10 @@ address a:hover,
 address a:focus {
   color: #404bbf;
 }
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+}
 /* ============/event=================== */
 /* =============header================== */
 .logo {
@@ -89,6 +93,12 @@ address a:focus {
 }
 .title {
   letter-spacing: 0.02em;
+}
+.btn {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 .benefits .title {
   font-weight: 500;
