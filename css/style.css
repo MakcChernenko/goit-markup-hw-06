@@ -83,8 +83,12 @@ address a:focus {
 }
 /* =============/header================== */
 /* ===============main=================== */
+/* =============1 section================ */
 .hero {
   background: #2e2f42;
+}
+.title {
+  letter-spacing: 0.02em;
 }
 .benefits .title {
   font-weight: 500;
