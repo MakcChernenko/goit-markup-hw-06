@@ -1,3 +1,15 @@
+/* =================global style ==============*/
+* {
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.container {
+  display: flex;
+}
+/* ==================/global style============= */
+/* =================tag style================== */
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -43,19 +55,8 @@ a {
 ul li {
   list-style: none;
 }
-header .logo span {
-  color: #2e2f42;
-}
-footer .logo span {
-  color: #f4f4fd;
-}
-footer {
-  background: #2e2f42;
-}
-footer .text {
-  color: #f4f4fd;
-}
-/* ==============event==================*/
+/* ===============/tag style=============== */
+/* =================event===================*/
 .nav a:hover,
 .nav a:focus {
   color: #404bbf;
@@ -69,7 +70,13 @@ address a:focus {
   background-color: #404bbf;
 }
 /* ============/event=================== */
-/* =============header================== */
+/* ===============logo style===============*/
+header .logo span {
+  color: #2e2f42;
+}
+footer .logo span {
+  color: #f4f4fd;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -79,17 +86,37 @@ address a:focus {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+/* ===============/logo style============== */
+/* =============header================== */
+.header.flex {
+  justify-content: space-between;
+  margin: 0 156px;
+  padding: 24px 0;
+  gap: 76;
+}
+.nav > .flex {
+  gap: 40px;
+}
 .address-page {
   font-style: normal;
+}
+.address-page > .flex {
+  gap: 40px;
 }
 .address-page-a {
   color: #434455;
 }
 /* =============/header================== */
-/* ===============main=================== */
 /* =============1 section================ */
 .hero {
   background: #2e2f42;
+}
+.hero > .container {
+  flex-direction: column;
+  padding: 188px 472px;
+  gap: 48px;
+  width: 1440px;
+  align-items: center;
 }
 .title {
   letter-spacing: 0.02em;
@@ -99,9 +126,23 @@ address a:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  padding: 16px 32px;
 }
 /* =============/1 section================ */
 /* =============2 section================ */
+.benefits {
+  padding: 120px 156px;
+}
+.benefits > .flex {
+  gap: 24px;
+}
+.benefits > .flex > .flex {
+  flex-direction: column;
+  gap: 8px;
+}
+.benefits > .title {
+  display: none;
+}
 .benefits .title {
   font-weight: 500;
   font-size: 20px;
@@ -125,8 +166,14 @@ address a:focus {
 }
 /* =============/3 section================ */
 .Portfolio .text {
-  /* in the body */
 }
 .Portfolio .title {
-  /* in the h3  */
 }
+/* ================footer==================== */
+footer {
+  background: #2e2f42;
+}
+footer .text {
+  color: #f4f4fd;
+}
+/* ==================/footer=================== */

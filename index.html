@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- зміни -->
-    <!-- зміни -->
-    <!-- зміни -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -20,13 +17,11 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <!-- logo -->
-      <!-- navigation -->
-      <!--  -->
-      <nav class="nav">
+    <header class="header flex">
+      <!--==================== navigation=============== -->
+      <nav class="nav flex">
         <a href="./index.html" class="logo">Web<span>Studio</span></a>
-        <ul>
+        <ul class="flex">
           <li><a href="./index.html" class="nav-a">Studio</a></li>
           <li><a href="" class="nav-a">Portfolio</a></li>
           <li><a href="" class="nav-a">Contacts</a></li>
@@ -34,7 +29,7 @@
       </nav>
       <!-- adress -->
       <address class="address-page">
-        <ul>
+        <ul class="flex">
           <li>
             <a href="mailto:info@devstudio.com" class="address-page-a"
               >info@devstudio.com</a
@@ -50,36 +45,38 @@
     </header>
     <main>
       <!---------- 1section ----------->
-      <section class="hero">
-        <h1 class="title">Effective Solutions for Your Business</h1>
-        <button type="button" class="btn">Order Service</button>
+      <section class="hero flex">
+        <div class="container">
+          <h1 class="title">Effective Solutions for Your Business</h1>
+          <button type="button" class="btn">Order Service</button>
+        </div>
       </section>
       <!------------ 2section --------->
       <section class="benefits">
         <h2 class="title">benefit</h2>
-        <ul>
-          <li>
+        <ul class="flex">
+          <li class="flex">
             <h3 class="title">Strategy</h3>
             <p class="text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="flex">
             <h3 class="title">Punctuality</h3>
             <p class="text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="flex">
             <h3 class="title">Diligence</h3>
             <p class="text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="flex">
             <h3 class="title">Technologies</h3>
             <p class="text">
               Design practice focused on digital experiences. We bring forth a
@@ -88,7 +85,6 @@
           </li>
         </ul>
       </section>
-      /* =================/2 section================ */
       <!-- ----------------3 section ------------->
       <section class="team-section">
         <h2 class="title">Our Team</h2>
