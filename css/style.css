@@ -6,8 +6,9 @@
   display: flex;
 }
 .container {
-  display: flex;
   width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 /* ==================/global style============= */
 /* =================tag style================== */
@@ -74,7 +75,7 @@ address a:focus {
   background-color: #404bbf;
 }
 /* ============/event=================== */
-/* ===============logo style===============*/
+/* =============header================== */
 header .logo span {
   color: #2e2f42;
 }
@@ -91,30 +92,29 @@ footer .logo span {
   color: #4d5ae5;
   margin-right: 76px;
 }
-/* ===============/logo style============== */
-/* =============header================== */
-.header.flex:first-child {
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 15px;
-  gap: 76;
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
-.nav > .menu.flex {
-  gap: 40px;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
   align-items: center;
+}
+.nav > .menu {
+  display: flex;
+  gap: 40px;
 }
 .nav .link {
   padding: 24px 0;
 }
-.address-page {
-  font-style: normal;
-}
-.address-page > .flex {
+.address-list {
+  display: flex;
   gap: 40px;
-}
-.address-page-a {
   color: #434455;
+  font-style: normal;
 }
 /* =============/header================== */
 /* =============1 section================ */
