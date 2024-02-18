@@ -23,16 +23,15 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* ==================/global style============= */
 /* =================tag style================== */
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  background: #fff;
+  /* background: #fff; */
 }
 button {
   cursor: pointer;
@@ -84,7 +83,6 @@ ol {
 img {
   display: block;
 }
-/* ===============/tag style=============== */
 /* =================event===================*/
 .nav a:hover,
 .nav a:focus {
@@ -98,7 +96,6 @@ address a:focus {
 .btn:focus {
   background-color: #404bbf;
 }
-/* ============/event=================== */
 /* =============header================== */
 header .logo span {
   color: #2e2f42;
@@ -115,6 +112,7 @@ header .logo span {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 .header .container {
   justify-content: space-between;
