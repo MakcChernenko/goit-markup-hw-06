@@ -10,6 +10,9 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.invisible {
+  display: none;
+}
 /* ==================/global style============= */
 /* =================tag style================== */
 body {
@@ -139,20 +142,16 @@ footer .logo span {
   color: #ffffff;
   padding: 16px 32px;
 }
-/* =============/1 section================ */
 /* =============2 section================ */
 .benefits {
   padding: 120px 156px;
 }
-.benefits > .flex {
+.benefits > .list {
   gap: 24px;
 }
-.benefits > .flex > .flex {
+.benefits .item {
   flex-direction: column;
   gap: 8px;
-}
-.benefits > .title {
-  display: none;
 }
 .benefits .title {
   font-weight: 500;
