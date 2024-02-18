@@ -162,7 +162,7 @@ footer .logo span {
 .benefits .item {
   flex-direction: column;
 }
-.benefits .list:first-child {
+.benefits .item:first-child {
   width: calc((100% - 72px) / 4);
 }
 .benefits .title {
