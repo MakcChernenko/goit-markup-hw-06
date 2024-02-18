@@ -157,7 +157,7 @@ header .logo span {
 }
 .benefits .item {
   flex-direction: column;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .benefits .title {
   margin-bottom: 8px;
