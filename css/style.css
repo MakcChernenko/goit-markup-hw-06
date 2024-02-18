@@ -98,9 +98,6 @@ address a:focus {
 header .logo span {
   color: #2e2f42;
 }
-footer .logo span {
-  color: #f4f4fd;
-}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -222,10 +219,19 @@ footer .logo span {
   text-align: start;
 }
 /* ================footer==================== */
-footer {
+.footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
-footer .text {
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer .logo span {
   color: #f4f4fd;
+}
+.footer .text {
+  color: #f4f4fd;
+  max-width: 264px;
 }
 /* ==================/footer=================== */
