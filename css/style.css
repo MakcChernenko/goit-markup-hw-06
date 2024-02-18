@@ -158,11 +158,11 @@ footer .logo span {
 .benefits .list {
   gap: 24px;
 }
-.benefits .list:first-child {
-  width: calc((100% - 72px) / 4);
-}
 .benefits .item {
   flex-direction: column;
+}
+.benefits .item:first-child {
+  width: calc((100% - 72px) / 4);
 }
 .benefits .title {
   margin-bottom: 8px;
