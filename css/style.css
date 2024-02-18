@@ -155,12 +155,12 @@ footer .logo span {
 .benefits {
   padding: 120px 0;
 }
-.benefits .list {
+.benefits .list:first-child {
   gap: 24px;
-}
-.benefits .item:first-child {
-  flex-direction: column;
   width: calc((100% - 72px) / 4);
+}
+.benefits .item {
+  flex-direction: column;
 }
 .benefits .title {
   margin-bottom: 8px;
