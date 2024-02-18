@@ -7,6 +7,7 @@
 }
 .container {
   display: flex;
+  width: 1158px;
 }
 /* ==================/global style============= */
 /* =================tag style================== */
@@ -55,6 +56,9 @@ a {
 ul li {
   list-style: none;
 }
+img {
+  display: block;
+}
 /* ===============/tag style=============== */
 /* =================event===================*/
 .nav a:hover,
@@ -85,17 +89,23 @@ footer .logo span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 /* ===============/logo style============== */
 /* =============header================== */
-.header.flex {
+.header.flex:first-child {
   justify-content: space-between;
-  margin: 0 156px;
-  padding: 24px 0;
+  margin: 0 auto;
+  padding: 0 15px;
   gap: 76;
+  border-bottom: 1px solid #e7e9fc;
 }
-.nav > .flex {
+.nav > .menu.flex {
   gap: 40px;
+  align-items: center;
+}
+.nav .link {
+  padding: 24px 0;
 }
 .address-page {
   font-style: normal;
