@@ -23,7 +23,14 @@ body {
 }
 button {
   cursor: pointer;
-  background: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 h1 {
   font-weight: 700;
@@ -96,22 +103,18 @@ footer .logo span {
   border-bottom: 1px solid #e7e9fc;
 }
 .header .container {
-  /* display: flex; */
   justify-content: space-between;
 }
 .nav {
-  /* display: flex; */
   align-items: center;
 }
 .nav > .menu {
-  /* display: flex; */
   gap: 40px;
 }
 .nav .link {
   padding: 24px 0;
 }
 .address-list {
-  /* display: flex; */
   gap: 40px;
   color: #434455;
   font-style: normal;
@@ -119,22 +122,20 @@ footer .logo span {
 /* =============/header================== */
 /* =============1 section================ */
 .hero {
-  background: #2e2f42;
+  background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero > .container {
   flex-direction: column;
-  padding: 188px 472px;
   gap: 48px;
-  width: 1440px;
   align-items: center;
 }
-.title {
+.hero .title {
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 .btn {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  background: #4d5ae5;
   color: #ffffff;
   padding: 16px 32px;
 }
