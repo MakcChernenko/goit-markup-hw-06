@@ -158,7 +158,7 @@ footer .logo span {
 .benefits .list {
   gap: 24px;
 }
-.list .item {
+.benefits .item:first-child {
   flex-direction: column;
   width: calc((100% - 72px) / 4);
 }
