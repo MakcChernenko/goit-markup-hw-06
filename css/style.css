@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-.invisible {
+.visually-hidden {
   display: none;
 }
 /* ==================/global style============= */
@@ -146,12 +146,13 @@ footer .logo span {
 .benefits {
   padding: 120px 0;
 }
-.benefits > .list {
+.benefits .list {
   gap: 24px;
 }
 .benefits .item {
   flex-direction: column;
-  /* gap: 8px; */
+}
+.benefits .item:first-child {
   width: calc((100% - 72px) / 4);
 }
 .benefits .title {
