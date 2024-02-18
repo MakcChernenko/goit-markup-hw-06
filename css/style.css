@@ -144,7 +144,7 @@ footer .logo span {
 }
 /* =============2 section================ */
 .benefits {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 .benefits > .list {
   gap: 24px;
@@ -152,6 +152,7 @@ footer .logo span {
 .benefits .item {
   flex-direction: column;
   gap: 8px;
+  width: calc((100% - 72px) / 4);
 }
 .benefits .title {
   font-weight: 500;
