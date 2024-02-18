@@ -157,10 +157,10 @@ footer .logo span {
 }
 .benefits .list {
   gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 .benefits .item {
   flex-direction: column;
-  width: calc((100% - 72px) / 4);
 }
 .benefits .title {
   margin-bottom: 8px;
