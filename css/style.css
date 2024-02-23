@@ -6,10 +6,15 @@
 .flex {
   display: flex;
 }
+.c-flex {
+  display: flex;
+  flex-direction: column;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -44,58 +49,25 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-h1 {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  color: #fff;
-}
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  text-align: center;
-  color: #2e2f42;
-}
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #2e2f42;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+img {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  display: block;
 }
 a {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
   display: inline-block;
-}
-ul,
-li,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-img {
-  display: block;
-}
-/* =================event===================*/
-.nav a:hover,
-.nav a:focus {
-  color: #404bbf;
-}
-address a:hover,
-address a:focus {
-  color: #404bbf;
-}
-.btn:hover,
-.btn:focus {
-  background-color: #404bbf;
 }
 /* =============header================== */
 .header {
@@ -124,31 +96,52 @@ header .logo span {
 .nav > .menu {
   gap: 40px;
 }
-.nav .link {
-  padding: 24px 0;
+.header .link {
+  font-weight: 500;
+  color: #2e2f42;
 }
-.address-list {
+.address .list {
   gap: 40px;
   color: #434455;
   font-style: normal;
-  padding: 24px 0;
 }
-/* =============/header================== */
-/* =============1 section================ */
+/* =================event===================*/
+.header .link:hover,
+.header .link:focus {
+  color: #404bbf;
+}
+.header .link:hover,
+.header .link:focus {
+  color: #404bbf;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+}
+/* =============section 1================== */
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-fon.jpg);
+  background-size: cover;
 }
-.hero > .container {
-  flex-direction: column;
+.hero .container {
   gap: 48px;
   align-items: center;
 }
 .hero .title {
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  text-align: center;
+  color: #fff;
   max-width: 496px;
 }
-.btn {
+.hero .btn {
   background: #4d5ae5;
   color: #ffffff;
   padding: 16px 32px;
@@ -161,9 +154,29 @@ header .logo span {
   gap: 24px;
 }
 .benefits .item {
-  flex-direction: column;
   width: calc((100% - 3 * 24px) / 4);
 }
+.benefits .icons {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+}
+/* ех, була ж ідея) */
+/* .benefits .title::before {
+  content: '';
+  position: absolute;
+  border: 1px solid red;
+  width: 264px;
+  height: 112px;
+  top: calc(-100% - 8px);
+  background-color: #fff;
+  background-image: url('../images/sprite/benefits-icon.svg/#icon-Vector');
+} */
 .benefits .title {
   margin-bottom: 8px;
   font-weight: 500;
