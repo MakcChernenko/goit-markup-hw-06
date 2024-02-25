@@ -75,7 +75,6 @@ a {
   top: 0;
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
 }
 .header .container {
   justify-content: space-between;
@@ -96,32 +95,45 @@ header .logo span {
 .nav {
   align-items: center;
 }
-.nav > .menu {
+.nav .menu {
   gap: 40px;
 }
 .header .link {
   font-weight: 500;
   color: #2e2f42;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header .link:hover,
+.header .link:focus {
+  color: #404bbf;
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background: #404bbf;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
 }
 .address .list {
   gap: 40px;
   color: #434455;
   font-style: normal;
 }
-/* =================event===================*/
-.header .link:hover,
-.header .link:focus {
+.address .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address .link:hover,
+.address .link:focus {
   color: #404bbf;
 }
-.header .link:hover,
-.header .link:focus {
-  color: #404bbf;
-}
-.btn:hover,
-.btn:focus {
-  background-color: #404bbf;
-}
-
 /* =============section 1================== */
 .hero {
   width: 1440px;
@@ -152,6 +164,10 @@ header .logo span {
   background-color: #4d5ae5;
   color: #ffffff;
   padding: 16px 32px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
 }
 /* =============2 section================ */
 .benefits {
@@ -213,6 +229,8 @@ header .logo span {
 .team .item {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team .description {
   padding: 32px 0;
@@ -266,6 +284,10 @@ header .logo span {
 }
 .portfolio .item {
   width: calc((100% - 48px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .banner-all {
   position: relative;
@@ -278,14 +300,19 @@ header .logo span {
   position: absolute;
   bottom: -100%;
   background-color: #4d5ae5;
-  transition-property: transform;
-  transition-duration: 1000ms;
-  transition-timing-function: ease;
+  transition-property: transform, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
 .portfolio .item:hover .banner-portfolio,
 .portfolio .item:focus .banner-portfolio {
   transform: translate(0%, -100%);
+}
+.portfolio .item:hover,
+.portfolio .item:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .text-banner {
   color: #f4f4fd;
