@@ -36,7 +36,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  background: #fff;
+  background-color: #fff;
 }
 button {
   cursor: pointer;
@@ -71,6 +71,9 @@ a {
 }
 /* =============header================== */
 .header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
   padding: 24px 0;
 }
@@ -118,8 +121,11 @@ header .logo span {
 .btn:focus {
   background-color: #404bbf;
 }
+
 /* =============section 1================== */
 .hero {
+  width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
@@ -142,7 +148,8 @@ header .logo span {
   max-width: 496px;
 }
 .hero .btn {
-  background: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
   color: #ffffff;
   padding: 16px 32px;
 }
@@ -166,7 +173,7 @@ header .logo span {
   align-items: center;
   height: 112px;
 }
-/* ех, була ж ідея) */
+/* ех, була ж ідея */
 /* .benefits .title::before {
   content: '';
   position: absolute;
@@ -175,7 +182,7 @@ header .logo span {
   height: 112px;
   top: calc(-100% - 8px);
   background-color: #fff;
-  background-image: url('../images/sprite/benefits-icon.svg/#icon-Vector');
+  background-image: url('../images/sprites.svg#icon-Vector');
 } */
 .benefits .title {
   margin-bottom: 8px;
@@ -185,12 +192,18 @@ header .logo span {
 }
 /* =============3 section================ */
 .team {
+  width: 1128px;
+  margin: 0 auto;
   background-color: #f4f4fd;
   padding: 120px 0;
 }
 .team .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  color: #2e2f42;
   text-align: center;
-  letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
 .team .list {
@@ -198,25 +211,52 @@ header .logo span {
   gap: 24px;
 }
 .team .item {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .team .description {
   padding: 32px 0;
+  text-align: center;
+  align-items: center;
 }
 .team .list .title {
-  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .team .text {
-  text-align: center;
-  color: #434455;
+  margin-bottom: 8px;
+}
+.list-icon {
+  gap: 24px;
+}
+.icons-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 100%;
+}
+.icon-team {
+  fill: #f4f4fd;
+}
+.icons-team:hover,
+.icons-team:focus {
+  background-color: #404bbf;
 }
 /* ===============4 section ===============*/
 .portfolio {
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
 }
 .portfolio .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
   margin-bottom: 72px;
 }
 .portfolio .list {
@@ -227,6 +267,29 @@ header .logo span {
 .portfolio .item {
   width: calc((100% - 48px) / 3);
 }
+.banner-all {
+  position: relative;
+  overflow: hidden;
+}
+.banner-portfolio {
+  width: 360px;
+  height: 300px;
+  padding: 40px 32px;
+  position: absolute;
+  bottom: -100%;
+  background-color: #4d5ae5;
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+.portfolio .item:hover .banner-portfolio,
+.portfolio .item:focus .banner-portfolio {
+  transform: translate(0%, -100%);
+}
+.text-banner {
+  color: #f4f4fd;
+}
 .portfolio .description {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -235,11 +298,15 @@ header .logo span {
 .portfolio .item .title {
   margin-bottom: 8px;
   text-align: start;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
 }
 /* ================footer==================== */
 .footer {
+  gap: 120px;
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 100px 0 0 156px;
 }
 .footer .logo {
   display: inline-block;
@@ -251,5 +318,29 @@ header .logo span {
 .footer .text {
   color: #f4f4fd;
   max-width: 264px;
+}
+.social-div {
+  width: 208px;
+  height: 80px;
+  position: relative;
+}
+.icons-social {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #4d5ae5;
+}
+.icon-social {
+  fill: #f4f4fd;
+}
+.text-social {
+  color: #fff;
+  margin-bottom: 16px;
+}
+.icons-social:hover,
+.icons-social:focus {
+  background-color: #31d0aa;
 }
 /* ==================/footer=================== */
