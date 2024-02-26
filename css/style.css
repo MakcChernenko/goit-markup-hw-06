@@ -67,7 +67,7 @@ img {
 }
 a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 /* =============header================== */
 .header {
