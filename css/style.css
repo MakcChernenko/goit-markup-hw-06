@@ -278,30 +278,27 @@ header .logo span {
 }
 .portfolio .item {
   width: calc((100% - 48px) / 3);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .banner-all {
   position: relative;
   overflow: hidden;
 }
 .banner-portfolio {
-  width: 360px;
-  height: 300px;
-  padding: 40px 32px;
   position: absolute;
-  bottom: -100%;
+  top: 0;
+  left: 0;
+  color: #f4f4fd;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  transform: translateY(100%);
   background-color: #4d5ae5;
-  transition-property: transform, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .item:hover .banner-portfolio,
 .portfolio .item:focus .banner-portfolio {
-  transform: translate(0%, -100%);
+  transform: translateY(0);
 }
 .portfolio .item:hover,
 .portfolio .item:focus {
@@ -311,9 +308,6 @@ header .logo span {
 .portfolio .item:hover .portfolio .text,
 .portfolio .item:focus .portfolio .text {
   transform: translateY(0%);
-}
-.text-banner {
-  color: #f4f4fd;
 }
 .portfolio .description {
   padding: 32px 16px;
