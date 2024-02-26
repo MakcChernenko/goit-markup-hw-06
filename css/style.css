@@ -306,6 +306,7 @@ header .logo span {
   position: absolute;
   bottom: -100%;
   background-color: #4d5ae5;
+  transform: translateY(0%);
   transition-property: transform, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
