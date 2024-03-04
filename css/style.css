@@ -428,6 +428,8 @@ header .logo span {
   color: #2e2f42;
 }
 .modal-label {
+  display: block;
+  position: relative;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -447,8 +449,8 @@ header .logo span {
 .modal-label-group .icon {
   position: absolute;
   left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+  /* top: 50%; */
+  transform: translateY(50%);
 }
 .modal-label .modal-input-area {
   position: relative;
@@ -490,7 +492,7 @@ header .logo span {
 .modal-input {
   width: 100%;
   height: 40px;
-  padding: 8px 16px 8px 38px;
+  padding: 0 0 0 38px;
 }
 /* ==================form=================== */
 .form-container {
