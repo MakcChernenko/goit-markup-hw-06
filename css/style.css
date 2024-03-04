@@ -327,8 +327,9 @@ header .logo span {
   background: #2e2f42;
   padding: 100px 0;
 }
-.footer .flex {
+.footer.flex {
   align-items: baseline;
+  justify-content:center;
 }
 .div-logo {
   margin-right: 120px;
@@ -348,6 +349,7 @@ header .logo span {
   width: 208px;
   height: 80px;
   position: relative;
+  margin-right: 80px;
 }
 .list-social {
   gap: 16px;
@@ -504,32 +506,45 @@ header .logo span {
 }
 .form-container .footer-form {
   display: flex;
+  gap: 24px;
 }
 .form-container .label-form {
 }
 .form-container .input-form {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   width: 264px;
   height: 40px;
   padding: 0 16px;
   border: 1px solid #fff;
   border-radius: 4px;
+  background-color: transparent; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+
 }
 .form-container .btn-form {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px; 
   height: 40px;
   background: #4d5ae5;
+  color: #ffffff 
 }
 .form-container .btn-form:hover,
 .form-container .btn-form:focus {
   background-color: #404bbf;
 }
-.form-container .btn-form::placeholder {
+.form-container .input-form::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color #ffffff; 
 }
 .form-container .icon-form {
+  margin-left: 16px;
 }
