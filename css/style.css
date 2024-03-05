@@ -524,12 +524,12 @@ header .logo span {
 .modal-input:focus{
   border-color: #4D5AE5;
 }
-/* .span-privacy-policy {
+.span-privacy-policy {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-} */
+}
 .pseudo-check-icon{
   display: inline-flex;
   align-items: center;
