@@ -531,7 +531,7 @@ header .logo span {
   color: #4d5ae5;
 }
 .pseudo-check{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent; 
