@@ -382,7 +382,7 @@ a {
     text-align: center;
     margin-bottom: 72px;
   }
-  .team .list {
+  .team-list {
     display: flex;
     flex-direction: column;
     gap: 72px;
