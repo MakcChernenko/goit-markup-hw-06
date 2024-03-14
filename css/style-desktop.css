@@ -622,9 +622,3 @@ header .logo-span {
   margin-left: 16px;
   fill: #fff;
 }
-/* ============media=========== */
-@media screen and (min-width:1440px) {
-  body{
-    background-color: red;
-  }
-}
