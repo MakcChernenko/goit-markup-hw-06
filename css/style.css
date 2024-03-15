@@ -121,6 +121,10 @@ a {
     padding: 24px 0;
     gap: 40px;
   }
+  .menu-link:hover,
+  .menu-link:focus {
+  color: #404bbf;
+}
   .menu-link.current {
     position: relative;
     color: #404bbf;
@@ -143,6 +147,10 @@ a {
     display: block;
     padding: 16px 0;
   }
+  .addres-list .link:hover,
+  .addres-list .link:focus {
+  color: #404bbf;
+}
   .addres-list {
     display: flex;
     flex-direction: column;
@@ -274,6 +282,10 @@ a {
         url('../images/hero-fon-table@2x.jpg');
     }
   }
+  .hero-btn:hover,
+  .hero-btn:focus {
+  background-color: #404bbf;
+}
 }
 
 @media screen and (min-width: 1440px) {
