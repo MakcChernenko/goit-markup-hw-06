@@ -164,6 +164,9 @@ a {
   .addres-list .link {
     color: #434455;
     font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
   .logo {
     padding: 24px 0;
@@ -404,11 +407,11 @@ a {
 }
 /* ===================Our Team================ */
   .team{
+    background-color: #f4f4fd;
     padding: 96px 0;
   }
 .team-container {
-    max-width: 320px;
-    background-color: #f4f4fd;
+    max-width: 296рх;
     margin: 0 auto;
   }
   .team-title {
